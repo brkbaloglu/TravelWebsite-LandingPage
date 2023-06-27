@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    width: 15rem;
+    background: white;
+    color: #00d9ff;
+    padding: 1rem;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #00d9ff;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+.home .navbar .logo {
+    color: white;
+    font-size: 25px;
+}
+
+.home .navbar .logo span {
+    color: #00d9ff;
+}
+
+.navbar {
+    height: 5rem;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .2));
+}
+
+.navbar .navbar-items ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.navbar .navbar-items ul li {
+    margin: 0 1rem;
+}
+
+.navbar .navbar-items ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.home {
+    background-image: linear-gradient(45deg, #00d9ff3e, transparent, transparent, transparent), url("pexels-muffin-creatives-2468773.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+.home .container {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home .container h1 {
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+
+.home .container p {
+    font-size: 20px;
+}
+
+.items {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    left: 0;
+}
+
+.items ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.items ul li {
+    margin: 1rem .5rem;
+}
+
+.items ul li a {
+    color: white;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.items ul li a:hover {
+    background: white;
+    color: #00d9ff;
+}
+
+.navbar-items ul li a {
+    color: white;
+    padding: 1rem;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.navbar-items ul li a:before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid #00d9ff;
+    transition: .4s linear;
+}
+
+.navbar-items ul li a:hover::before {
+    width: 100%;
+}
+
+.items ul li a:hover {
+    background: #00d9ff;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #00d9ff;
+    color: white;
+}
